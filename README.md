@@ -6,6 +6,8 @@ Practical use: finding out which variant of a user interface is most often
 successful while maximizing the overall success rate as the system
 is learning.
 
+See also:
+http://stevehanov.ca/blog/index.php?id=132
 http://en.wikipedia.org/wiki/Multi-armed_bandit
 
 Installation:
