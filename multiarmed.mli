@@ -17,8 +17,11 @@ type t = {
     (** How often we make random picks for exploratory purposes. *)
 
   update_contribution : float;
-    (** How much contribution does a given success or failure on the
-        computation of the average success frequency for a given choice.
+    (** Parameter used to compute the exponential moving average.
+
+        This represents how much a given success or failure
+        contributes to the computation of the average success
+        frequency for a given choice.
         This gives more weight to recent results, their weight
         decreasing exponentially over time. *)
 
