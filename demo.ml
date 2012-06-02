@@ -1,0 +1,1 @@
+let () = Multiarmed.test ()

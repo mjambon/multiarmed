@@ -1,0 +1,4 @@
+name = "multiarmed"
+description = "Testing success of different choices while maximizing success"
+archive(byte) = "multiarmed.cma"
+archive(native) = "multiarmed.cmxa"
