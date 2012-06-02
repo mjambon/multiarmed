@@ -7,8 +7,9 @@ successful while maximizing the overall success rate as the system
 is learning.
 
 See also:
-http://stevehanov.ca/blog/index.php?id=132
-http://en.wikipedia.org/wiki/Multi-armed_bandit
+
+* [20 lines of code that will beat A/B testing every time](http://stevehanov.ca/blog/index.php?id=132)
+* [Multi-armed bandit problem at Wikipedia](http://en.wikipedia.org/wiki/Multi-armed_bandit)
 
 Installation:
 
