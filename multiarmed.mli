@@ -1,7 +1,7 @@
 (**
    Epsilon-greedy solution to the multiarmed-bandit problem,
    with recency bias allowing to follow trends over time.
-   
+
    Practical use: finding out which variant of a user interface is most often
    successful while maximizing the overall success rate as the system
    is learning.
@@ -10,8 +10,14 @@
 *)
 
 type t = {
-  array : float array;
+  estimates : float array;
     (** The average success rate of each choice. *)
+
+  picked : int array;
+    (** Number of times each random variable was picked. *)
+
+  successes : int array;
+    (** Number of successes obtained with each random variable. *)
 
   random_fraction : float;
     (** How often we make random picks for exploratory purposes. *)
@@ -41,4 +47,4 @@ val pick : t -> int
 val feedback : t -> int -> bool -> unit
   (** Report success (true) or failure (false) for a given choice (index). *)
 
-val test : unit -> unit
+val test : ?n:int -> ?trials:int -> ?change_p_every:int -> unit -> unit

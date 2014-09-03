@@ -10,7 +10,7 @@ opt:
 	ocamlopt -a -o multiarmed.cmxa multiarmed.cmx
 demo:
 	ocamlopt -o demo multiarmed.mli multiarmed.ml demo.ml
-	./demo
+	./demo 10 100_000 10_000
 doc:
 	mkdir -p html
 	ocamldoc -html -d html multiarmed.mli
