@@ -101,7 +101,7 @@ let test ?(n = 10) ?(trials = 100) ?(change_p_every = 1000) () =
   if change_p_every < trials then
     printf "Change all distributions every %i trials\n%!" change_p_every;
   let x = init ~random_fraction: 0.05 ~update_contribution: 0.1 n in
-  let random_variables = make_random_variables ~change_p_every:1000 x.rng n in
+  let random_variables = make_random_variables ~change_p_every x.rng n in
   let successes = ref 0 in
   for i = 1 to trials do
     let j = pick x in
